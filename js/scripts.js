@@ -23,7 +23,9 @@ $(document).ready(function() {
 
 var uppCase = newItems.map(function(item){
   return item.toUpperCase();
+
 });
+uppCase = uppCase.sort();
 
 uppCase.forEach(function(item){
   $("ul#result").append("<li>" + item + "</li>");
